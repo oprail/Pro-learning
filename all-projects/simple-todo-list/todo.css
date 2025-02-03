@@ -19,6 +19,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   font-size: 1rem;
+  display: none;
 }
 #header-folder {
   text-align: center;
@@ -36,7 +37,7 @@ body {
 /* folder page content */
 
 .folder-page {
-  display: none;
+  
 }
 .folder , .todo{
   background: #fff;
@@ -89,7 +90,7 @@ body {
 }
 
 /* New folder todo maker window */
-.create-new-folder , .create-new-todo {
+.create-new-folder {
   background: red;
   text-align: center;
   padding: 10px;
@@ -99,6 +100,17 @@ body {
   z-index: 99;
   top: 30%;
   display: none;
+}
+.create-new-todo {
+  background: red;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+width: 230px;
+position: absolute;
+z-index: 99;
+top: 30%;
+display: none;
 }
 .create-new-folder input[type='color'] {
   visibility: hidden;
