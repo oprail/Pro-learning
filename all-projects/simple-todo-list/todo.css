@@ -1,0 +1,109 @@
+body {
+  background: #333;
+  padding: 0;
+  margin: 0;
+  height: 100vh; 
+  border: none;
+  display :flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-app {
+  background: #fff;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+}
+#header-back {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+}
+#header-folder {
+  text-align: center;
+}
+#goBackBtn {
+  margin: 0px 25% 0px 0px;
+  
+}
+#goBackBtn i {
+  padding-right: 5px ;
+  font-size: 1.2rem;
+}
+
+
+/* folder page content */
+
+.folder-page {
+  display: none;
+}
+.folder , .todo{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border:0;
+  border-radius: 7px;
+  margin: 7px 0px;
+  box-shadow: 0px 2px 5px black;
+}
+.item-color  {
+  width: 7px;
+  height: 100%;
+  background: greenyellow;
+  padding: 60px 0 0 0;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.folder p , .todo p{
+  margin: 0px 0px 0px 10px;
+  padding: 15px 0px 15px 0;
+}
+.folder i , .todo i{
+  margin: 0px 0px 0px 10px;
+}
+
+
+/* footer box */
+#footer-box {
+  margin-top: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-box button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  border: 0;
+  background: cornflowerblue;
+  color: #fff;
+  outline: 0;
+}
+#footer-box button:hover {
+  border: 1px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

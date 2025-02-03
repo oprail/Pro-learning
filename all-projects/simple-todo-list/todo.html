@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>simple todo list</title>
+  
+  <link rel="stylesheet" href="todo.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
 
-</body>
 
+<div class="todo-app">
+   <div id="header-back">
+     <a id="goBackBtn">
+      <i class="fas fa-angle-left"></i>back
+     </a>
+     <p>Lists</p>
+   </div>
+   
+   <div class="folder-page">
+       <div class="folder" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-folder"></i>
+         <p>folder 1</p>
+       </div>
+       <div class="folder" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-folder"></i>
+         <p>folder 2</p>
+       </div>
+       <div class="folder" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-folder"></i>
+         <p>folder 3</p>
+       </div>
+     </div>
+     
+     
+   <div class="todo-page">
+       <div class="todo" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-square"></i>
+         <p>item 1</p>
+       </div>
+       <div class="todo" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-check-square"></i>
+         <p>item 2</p>
+       </div>
+       <div class="todo" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-square"></i>
+         <p>item 3</p>
+       </div>
+     </div>
+          
+     
+     
+     <div id="footer-box">
+       <button class="add-new-folder">+</button>
+   </div>
+</div>
+
+
+
+
+
+
+<script src="todo.js"></script>
+</body>
 </html>
