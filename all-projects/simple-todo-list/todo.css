@@ -8,6 +8,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+#background-hide {
+  background: black ;
+  position: absolute;
+  z-index: 90;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  display: none;
+}
 .todo-app {
   background: #fff;
   width: 250px;
@@ -15,14 +24,14 @@ body {
   border-radius: 10px;
 }
 #header-back {
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
   font-size: 1rem;
-  display: none;
 }
 #header-folder {
   text-align: center;
+  display: block;
 }
 #goBackBtn {
   margin: 0px 25% 0px 0px;
@@ -37,7 +46,10 @@ body {
 /* folder page content */
 
 .folder-page {
-  
+
+}
+.todo-page {
+  display: none;
 }
 .folder , .todo{
   background: #fff;
@@ -91,7 +103,7 @@ body {
 
 /* New folder todo maker window */
 .create-new-folder {
-  background: red;
+  background: #fff;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -99,10 +111,11 @@ body {
   position: absolute;
   z-index: 99;
   top: 30%;
+  border: 2px solid black;
   display: none;
 }
 .create-new-todo {
-  background: red;
+  background: #fff;
 text-align: center;
 padding: 10px;
 border-radius: 10px;
@@ -110,6 +123,7 @@ width: 230px;
 position: absolute;
 z-index: 99;
 top: 30%;
+border: 2px solid black;
 display: none;
 }
 .create-new-folder input[type='color'] {
