@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  
+}
+.calculator {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+}
+
+.output-box {
+  width: 67%;
+  height: 15vmin;
+  margin: 2%;
+  border-radius: 1vmin;
+  background: darkorange; /* <- this is intentional */
+}
+#output-feild {
+  height: 10vmin;
+  background: #fff;
+  overflow-x: scroll;
+  padding: 2vmin;
+  border-radius: 1vmin;
+  font-size: 1.5em;
+}
+.all-btns {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+.btn {
+width: 15vmin;
+height: 15vmin;
+margin: 1%;
+border: 0;
+border-radius: 1vmin;
+font-size: 1.5em;
+}
+#equal-btn {
+  width: 32vmin;
+  height: 15vmin;
+  font-size: 2em;
+  background: darkorange;
+  color: #fff;
+}
+#allClear , #remove {
+  color : darkorange;
+  background: #FFFFF155;
+}
