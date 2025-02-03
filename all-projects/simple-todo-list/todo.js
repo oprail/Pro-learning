@@ -51,6 +51,7 @@ function closeNewFolderWindow() {
     userInputTodo.value = "";
 }
 
+// add new folder/list =>
 function addNewFolder() {
    // create elements
     let newFolder = document.createElement("div");
@@ -58,66 +59,53 @@ function addNewFolder() {
     let newFolderI = document.createElement("i");
     let newFolderP = document.createElement("p");
     
-    // add class attribute
+    // add class attributes
     newFolder.setAttribute("class","folder");
     newFolderItemColor.setAttribute("class","item-color");
     newFolderI.setAttribute("class","fas fa-folder");
     newFolderP.setAttribute("id","folderName");
     
-    
-    
-    // set values asign 
+    // asign values  
     newFolderP.innerText = userInputFolderName.value;
     newFolderItemColor.style.background = userInputColor.value; 
     
-    // append in 
+    // append in dom
     newFolder.append(newFolderItemColor);
     newFolder.append(newFolderI);
     newFolder.append(newFolderP);
-    
     folderPage.append(newFolder);
    
-   
-   
-   closeNewFolderWindow(); // in end
+   closeNewFolderWindow();
 }
 
-
-
-
+// open to-do of folder/list
 function openTodoPage(event) {
-  
-  const folderName = document.querySelector("#folder-name");
-  
-  folderName.innerText = event.target.innerText;
-  
-  headerBack.style.display = "flex";
-  headerFolder.style.display = "none";
-  folderPage.style.display = "none";
-  todoPage.style.display = "inline";
-  
-  addNewFolderBtn.setAttribute("class","add-new-todo");
-  
-  
-  
-  
+   
+   const folderName = document.querySelector("#folder-name");
+   folderName.innerText = event.target.innerText;
+   
+   headerBack.style.display = "flex";
+   headerFolder.style.display = "none";
+   folderPage.style.display = "none";
+   todoPage.style.display = "inline";
+   
+   addNewFolderBtn.setAttribute("class","add-new-todo");
 }
 
-
+// close to-do page go back in lists
 function closeTodoPage() {
-  headerBack.style.display = "none";
-  headerFolder.style.display = "block";
-  folderPage.style.display = "inline";
-  todoPage.style.display = "none";
-
-addNewFolderBtn.setAttribute("class",
-  "add-new-folder");
+   headerBack.style.display = "none";
+   headerFolder.style.display = "block";
+   folderPage.style.display = "inline";
+   todoPage.style.display = "none";
+   addNewFolderBtn.setAttribute("class",
+   "add-new-folder");
 }
 
-
+// add new to-do 
 function addNewTodo() {
-  
-  // create elements
+   
+   // create elements
     let newTodo = document.createElement("div");
     let newTodoItemColor = document.createElement("div");
     let newTodoI = document.createElement("i");
@@ -127,11 +115,8 @@ function addNewTodo() {
     newTodo.setAttribute("class","todo");
     newTodoItemColor.setAttribute("class","item-color");
     newTodoI.setAttribute("class","fas fa-square");
- //   newFolderP.setAttribute("id","folderName");
     
-    
-    
-    // set values asign 
+    // asign values  
     newTodoP.innerText = userInputTodo.value;
     newTodoItemColor.style.background = userInputColor.value; 
     
@@ -139,41 +124,28 @@ function addNewTodo() {
     newTodo.append(newTodoItemColor);
     newTodo.append(newTodoI);
     newTodo.append(newTodoP);
-    
     todoPage.append(newTodo);
    
-   
-   
-   closeNewFolderWindow(); // in end
-  
+   closeNewFolderWindow(); 
 }
 
 
-
-
-// <-------
-
-
-
+// +++++>   Event listener   <+++++
 
 // open close window popup
 addNewFolderBtn.addEventListener("click",openNewFolderWindow);
 popupCloseBtn.addEventListener("click",closeNewFolderWindow);
 todoCloseBtn.addEventListener("click",closeNewFolderWindow);
 
-// go back into folders page
+// go back into folders page e->h
 goBackBtn.addEventListener("click",closeTodoPage);
 
-
-// add new folder event handle
+// add new folder event->handle
 popupAddBtn.addEventListener("click",addNewFolder);
-
 
 todoAddBtn.addEventListener("click",addNewTodo); 
 
-// &&&&&&&&&&&&&&&&&&
-
-
+// **> detect click on folder  <**
 document.querySelector(".folder-page").addEventListener("click",(event) =>{
   
   if (event.target.classList.contains("folder")) {
