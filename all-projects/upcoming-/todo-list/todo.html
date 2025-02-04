@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <title>simple todo list</title>
+  
+  <link rel="stylesheet" href="todo.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="background-hide"></div>
+<div class="todo-app">
+  
+   <div id="header-back">
+     <a id="goBackBtn">
+      <i class="fas fa-angle-left"></i>back
+     </a>
+     <p id="folder-name">todo</p>
+   </div>
+   
+   
+    <div id="header-folder">
+     <p>Lists</p>
+   </div>
+   
+
+   
+   <div class="folder-page">
+     
+       <!--
+       <div class="folder" id="f1 name">
+       <div class="item-color"></div>
+         <i class="fas fa-folder"></i>
+         <p>folder 1</p>
+       </div>
+       <div class="folder" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-folder"></i>
+         <p>folder 2</p>
+       </div>
+       <div class="folder" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-folder"></i>
+         <p>folder 3</p>
+       </div>
+       -->
+       
+     </div>
+     
+     
+     
+   <div class="todo-page">
+     
+       <div class="todo" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-square"></i>
+         <p>item 1</p>
+       </div>
+       
+       <div class="todo" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-check-square"></i>
+         <p>item 2</p>
+       </div>
+       <div class="todo" id="f1">
+       <div class="item-color"></div>
+         <i class="fas fa-square"></i>
+         <p>item 3</p>
+       </div>
+       
+      </div>
+       
+       
+     
+          
+        
+          
+     
+     <div class="create-new-folder">
+       <p>Add Folder</p>
+       <label>
+         <input type="color" id="user-color">
+       </label>
+        <input type="text" id="user-fol-name" placeholder="enter name">
+        <button id="cancel-btn">cancel</button>
+        <button type="submit" id="add-btn">Add</button>
+     </div>
+     
+     <div class="create-new-todo">
+       <p>Add Todo</p>
+        <input type="text" id="user-todo" placeholder="enter Todo">
+        <button id="todo-cancel-btn">cancel</button>
+        <button type="submit" id="todo-add-btn">Add</button>
+     </div>
+     
+     
+     <div id="footer-box">
+       <button id="add-new-item-btn" class="add-new-folder">+</button>
+   </div>
+</div>
+
+
+
+
+
+
+<script src="todo.js"></script>
+</body>
+</html>
