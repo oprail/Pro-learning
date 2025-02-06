@@ -25,7 +25,7 @@ displaySavedData();
 // open new to-do popup/window
 function openTodoPopup() {
     newTodoWindow.style.display = "inline-block";
-    popupBackground.style.display = "block";
+    popupBackground.style.display = "flex";
 }
 
 // close new to-to popup/window
@@ -104,10 +104,8 @@ function updateContainerHeight() {
   
    if (elements.length === 1) {
    todoPage.style.height = "100px";
-   console.log("set height 100")
    } else if (elements.length === 2) {
    todoPage.style.height = "180px";
-   console.log("set height 200")
    } else if (elements.length > 2) {
    todoPage.style.height = "250px";
    }
@@ -131,7 +129,7 @@ function displaySavedData() {
     todoData = localStorage.getItem("todoData");
   
   
-    if (todoData.trim() === "") {
+    if (todoData === "") {
      todoPage.style.height = "5px";
     } else if(todoData)  {
     allTodos.innerHTML = todoData;

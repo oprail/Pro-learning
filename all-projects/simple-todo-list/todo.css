@@ -8,15 +8,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-#background-hide {
-  background: black ;
-  position: absolute;
-  z-index: 90;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.5;
-  display: none;
-}
 .todo-app {
   background: #fff;
   width: 250px;
@@ -32,7 +23,6 @@ body {
 .todo-page {
   height: 250px;
   overflow-y: scroll;
-  box-shadow: 0px -10px 5px white inset;
   position: relative;
   display: relative;
 }
@@ -44,7 +34,7 @@ body {
   width: 100%;
   background: #fff;
   position: sticky;
-  top: 0px;
+  top: -3px;
   z-index: 9;
   box-shadow: 0px 5px 5px white;
 }
@@ -53,7 +43,7 @@ body {
   width: 100%;
   background: #fff;
   position: sticky;
-  bottom: 0px;
+  bottom: -3px;
   z-index: 9;
   box-shadow: 0px -5px 5px white;
 }
@@ -66,6 +56,7 @@ body {
   border-radius: 7px;
   margin: 7px 5px;
   box-shadow: 0px 2px 5px black;
+  scroll-behavior: smooth;
 }
 .item-color  {
   width: 7px;
@@ -84,8 +75,6 @@ body {
   margin: 0px 0px 0px 10px;
 }
 
-
-/* footer box */
 #footer-box {
   margin-top: 30px;
   height: 60px;
@@ -108,18 +97,27 @@ body {
   border: 1px solid blue;
 }
 
-/* New folder todo maker window */
+/* New todo maker window */
+#background-hide {
+  background: transparent ;
+  position: absolute;
+  z-index: 90;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
 .create-new-todo {
   background: #fff;
-text-align: center;
-padding: 10px;
-border-radius: 10px;
-width: 230px;
-position: absolute;
-z-index: 99;
-top: 30%;
-border: 2px solid black;
-display: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 230px;
+  position: absolute;
+  z-index: 99;
+  border: 2px solid black;
+  display: none;
 }
 .create-new-todo input[type='color'] {
   visibility: hidden;
@@ -142,3 +140,107 @@ display: none;
   width: 30%;
 }
 
+@media (min-width : 600px) {
+
+    #header-folder {
+    font-size: 1.5em;
+    }
+    
+    .todo-app {  
+    width: 300px;
+    }
+    .todo-page {
+    height: 250px;
+    }
+    #shadow-ontop-Todo {
+    top: -10px;
+    }
+    #shadow-onbottom-Todo {
+    bottom: -5px;
+    }
+    #background-hide {  
+    position: absolute;
+    z-index: 90;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    }
+    
+   .create-new-todo {
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px;
+   width: 250px;
+   position: absolute;
+   z-index: 99;
+   border: 2px solid black;
+   display: none;
+   }
+}
+
+@media (min-width : 768px) {
+  
+   #header-folder {
+   font-size: 2em;
+   }
+
+   .todo-app {
+   width: 600px;
+   }
+   .todo-page {
+   height: 500px;
+   overflow-y: scroll;
+   position: relative;
+   display: relative;
+   }
+   .all-todo-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 2;
+   flex-wrap: wrap; 
+   }
+   .todo{  
+   display: flex;
+   align-items: center;
+   margin: 7px 5px;
+   box-shadow: 0px 2px 5px black;
+   width: 31%;  
+   }
+   #background-hide { 
+   position: absolute;
+   z-index: 90;
+   width: 100vw;
+   height: 100vh;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   }
+   .create-new-todo {  
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px;
+   width: 300px;
+   position: absolute;
+   z-index: 99;
+   border: 2px solid black;
+   font-size: 1.3em;
+   display: none;
+   }
+
+   #shadow-ontop-Todo {
+   top: -10px;
+   height: 20px;
+   }
+   #shadow-onbottom-Todo {
+   bottom: -5px;
+   height: 20px;
+   }
+
+   .create-new-todo {
+   width: 30%;
+   top: 45%;
+   }
+}
