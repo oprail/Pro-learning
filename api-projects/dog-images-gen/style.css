@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+
+#dogs-image-container {
+  text-align: center;
+}
+
+
+#dog {
+  border: 1px solid black;
+  margin: 1rem 0rem;
+  border-radius: 1rem;
+  width: 320px;
+  height: 250px;
+  display: inline-block;
+}
+
+
+#dog #dog-img {
+  width: 320px;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  
+   border-bottom-left-radius:1rem;
+   border-bottom-right-radius:1rem;
+}
+
+
+#dog #dog-name {
+   font-size: 1.1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   
+}
+
+#more-btn {
+  background-color : black;
+  color : #fff ;
+  cursor: pointer;
+  font-size: 1.3em;
+  padding: 0.5rem;
+  outline: 0;
+  margin: 1rem;
+}
