@@ -1,0 +1,151 @@
+* {
+  margin :0;
+  padding: 0;
+}
+
+body {
+  background: #8C52FF ;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  width: 80%;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.3) ;
+  backdrop-filter: blur(10px);
+}
+
+h3 {
+  text-align : center ;
+  font-size: 1.3rem;
+}
+
+#city {
+  display: block;
+  margin : 0.5rem auto;
+  width: 90%;
+  height: 25px;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+#search {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 35%;
+  height: 25px;
+  background: #DEBFF4;
+  border: 0;
+  border-radius: 0.3rem;
+  margin : 0.5rem auto;
+  padding: 1.3rem 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  outline: none;
+}
+
+#search:active {
+  background: #8B48D7;
+}
+
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+  width: 90%;
+  padding: 0 0.5rem;
+}
+
+
+.current-weather #current-weather-icon {
+  width: 50%;
+}
+
+#temp {
+  font-size: 2.2rem ;
+  font-weight: 800;
+}
+#cityName {
+  font-size: 0.9rem ;
+  margin :0.2rem auto;
+  color: purple;
+}
+#description {
+  font-size: 0.8rem ;
+}
+
+
+.extra-info {
+  display: none;
+  justify-content: space-evenly;
+  align-items :center ;
+  font-size: 0.7rem;
+  margin: 1rem auto;
+  width: 90%;
+  padding: 0 0.5rem;
+}
+.extra-info-box {
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items :center ;
+  gap: 0.2rem;
+}
+.extra-info-box i {
+  font-size: 0.8rem ;
+}
+
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.forecast {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center ;
+  overflow-x: scroll ;
+  width: 90%;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+  gap: 1rem ;
+  font-size: 0.7rem;
+}
+
+
+.hourly-forecast {
+  text-align: center;
+  padding:0.5rem;
+}
+
+.hourly-forecast img {
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

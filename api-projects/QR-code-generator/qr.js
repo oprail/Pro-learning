@@ -28,7 +28,7 @@ async function genQrCode() {
     throw console.error(e);
   }
 }
-
+  
 
 
 
