@@ -9,18 +9,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-
-
-
-
 <div class="app-container">
-  <!--  <h3>Drawing App</h3> -->
+  <h3 id="title-heading">Drawing App</h3>
   <div class="control-panel">
     
     <div class="shapes">
       <p class="panel-title"> Shapes </p>
       <div class="shape" id="rectangle">
-        
         <i class="fa-solid fa-square"></i> Rectangle
       </div>
       <div class="shape" id="circle">
@@ -39,12 +34,9 @@
       </div>
    </div>
       
-      
-      
-      
       <div class="tools">
         <p class="panel-title"> Tools </p>
-        <div class="tool" id="brush">
+        <div class="tool tool-selected" id="brush">
           <i class="fas fa-brush"></i> Brush
         </div>
         <div class="tool" id="eraser">
@@ -69,15 +61,15 @@
         <div class="options">
          <p class="panel-title"> Options </p>
          <button id="clearBtn" class="option">Clear Canvas</button>
-         <button id="saveImgBtn" class="option">Save As Image</button>
+         <button id="saveImgBtn" class="option">Save As Png</button>
         </div>
   </div>
-  
   
   <div class="drawing-board">
     <canvas class="canvas"></canvas>
   </div>
 </div>
+
 
 <script src="draw.js"></script>
 <body>

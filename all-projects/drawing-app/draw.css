@@ -4,15 +4,15 @@
 }
 
 body {
-  background: dodgerblue;
+  background: deepskyblue;
 }
 
-h3 {
-  text-align: center;
+#title-heading {
+   text-align: center;
+   display: none;
 }
 .app-container {
    height: 90vh;
-  
 }
 
 .control-panel {
@@ -23,16 +23,12 @@ h3 {
    background: #fff;
    margin: 0.3rem 0.5rem 0 0.5rem;
 }
-.panel-title {
-  
-}
-
 
 .shapes {
    width: 49%;
    margin: 0 auto;
-  
 }
+
 .shapes .shape , .fill-color{
    height: 1.5rem;
    display:flex ;
@@ -40,24 +36,21 @@ h3 {
    align-items: center;
    padding: 0 0.3rem ;
    color: #000;
-
 }
 
 .shapes .shape i , .shapes input {
   padding: 0 0.2rem ;
 }
 
-
-
-
 .shapes .shape.shape-selected {
-  color: blue;
+  color: dodgerblue;
 }
+
+
 
 .tools {
    width: 49%;
    margin: 0 auto;
-   
 }
 .tool {
    height: 1.8rem;
@@ -66,12 +59,11 @@ h3 {
    padding: 0 0.3rem;
 }
 .tool.tool-selected {
-   color: blue;
+   color: dodgerblue;
 }
 .tool i {
    padding: 0 0.3rem;
 }
-
 
 .tool #slider {
    -webkit-appearance: none;
@@ -79,7 +71,6 @@ h3 {
    height: 0.4rem;
    border-radius: 0.5rem;
    background : linear-gradient(90deg, dodgerblue 7%, gray 0%);
-
 }
 
 #slider::-webkit-slider-thumb {
@@ -93,59 +84,61 @@ h3 {
 
 
 
+
 .colors {
    width: 49%;
    margin: 0 auto;
-   
 }
 
-
-
 input[type='radio']:after {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        top: -2px;
-        left: -1.15px;
-        position: relative;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        background: rgba(255, 0, 0, 0);
-    }
+   width: 15px;
+   height: 15px;
+   border-radius: 15px;
+   top: -2px;
+   left: -1.15px;
+   position: relative;
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   background: rgba(255, 0, 0, 0);
+}
 
-    input[type='radio']:checked:after {
-        content: '';
-        border: 2px solid black;
-        background: transparent;
-        display: inline-block; 
-    }
-    
-    
-    
+input[type='radio']:checked:after {
+   content: '';
+   border: 2px solid black;
+   background: transparent;
+   display: inline-block; 
+}
+
 #white:after {
-   background: floralwhite;
-   border: 2px solid grey;
+   background: white;
+   box-shadow: 0 0 5px orange;
+   border: 2px solid #fff;
 }
 #black:after {
    background: #fff;
+   box-shadow: 0 0 5px orange;
    border: 2px solid black;
 }
 #blue:after {
    background: #fff;
+   box-shadow: 0 0 5px orange;
    border: 2px solid blue;
 }
 #red:after {
    background: #fff;
-  border: 2px solid red;
+   box-shadow: 0 0 5px orange;
+   border: 2px solid red;
 }
 #green:after {
    background: #fff;
-  border: 2px solid green;
+   box-shadow: 0 0 5px orange;
+   border: 2px solid green;
 }
 #yellow:after {
    background: #fff;
-  border: 2px solid yellow;
+   box-shadow: 0 0 5px orange;
+   border: 2px solid yellow;
 }
 #white:checked:after {
    background: white;
@@ -172,7 +165,7 @@ input[type='radio']:after {
    border: 2px solid yellow;
 }
 
-    
+
 
 
 
@@ -192,12 +185,14 @@ input[type='radio']:after {
    width: 100%;
 }
 #clearBtn {
-  background: #fff;
+   background: #fff;
 }
 #saveImgBtn {
    background: dodgerblue;
    color: #fff;
 }
+
+
 
 
 .drawing-board {
@@ -206,9 +201,6 @@ input[type='radio']:after {
    border-radius: 0.2rem;
 }
 .canvas {
-   background: #fff;
-   width: 100%;
-   height: 100%;
+   background-color: white;
    border-radius: 0.2rem;
 }
-
