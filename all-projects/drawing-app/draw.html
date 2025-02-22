@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drawing-App</title>
+  <link rel="stylesheet" href="draw.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+
+
+
+<div class="app-container">
+  <!--  <h3>Drawing App</h3> -->
+  <div class="control-panel">
+    
+    <div class="shapes">
+      <p class="panel-title"> Shapes </p>
+      <div class="shape" id="rectangle">
+        
+        <i class="fa-solid fa-square"></i> Rectangle
+      </div>
+      <div class="shape" id="circle">
+        <i class="fa-solid fa-circle"></i> Circle
+      </div>
+      <div class="shape" id="triangle">
+        <i class="fa-solid fa-play fa-rotate-270"></i> Triangle
+      </div>
+      <div class="shape" id="line">
+        <i class="fa-solid fa-slash"></i> Line
+      </div>
+      <div class="fill-color" id="">
+        <label>
+          <input id="fill-color-input" type="checkbox"> Fill color
+        </label>
+      </div>
+   </div>
+      
+      
+      
+      
+      <div class="tools">
+        <p class="panel-title"> Tools </p>
+        <div class="tool" id="brush">
+          <i class="fas fa-brush"></i> Brush
+        </div>
+        <div class="tool" id="eraser">
+          <i class="fas fa-eraser"></i> Eraser
+        </div>
+        <div class="tool">
+          <input value="2" id="slider" type="range" min="1" max="30">
+          <span id="sliderOutput">2</span>
+        </div>
+      </div>
+      
+       <div class="colors">
+         <p class="panel-title"> Colors </p>
+          <input id="white" name="color" class="color" type="radio">
+          <input id="black" name="color" class="color" type="radio">
+          <input id="blue" name="color" class="color" type="radio">
+          <input id="red" name="color" class="color" type="radio">
+          <input id="green" name="color" class="color" type="radio">
+          <input id="yellow" name="color" class="color" type="radio">
+        </div>
+       
+        <div class="options">
+         <p class="panel-title"> Options </p>
+         <button id="clearBtn" class="option">Clear Canvas</button>
+         <button id="saveImgBtn" class="option">Save As Image</button>
+        </div>
+  </div>
+  
+  
+  <div class="drawing-board">
+    <canvas class="canvas"></canvas>
+  </div>
+</div>
+
+<script src="draw.js"></script>
+<body>
+</body>
+
+</html>
