@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+#board {
+  background: black;
+}
+
+
+.control {
+  width: 70px;
+  height: 70px;
+  margin: 1rem;
+}
