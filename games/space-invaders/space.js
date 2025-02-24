@@ -54,7 +54,7 @@ let alienY = tileSize;
 let bulletArray = [];
 let bullet;
 let bulletVelocityY = -10;
-let autoFire = '_';
+let autoFire = 1;
 
 let score = 0;
 let gameOver = false;
@@ -247,7 +247,7 @@ function detectCollision(a, b) {
 function bulletWork() {
    for (var i = 0; i < bulletArray.length; i++) {
      let bullet = bulletArray[i];
-     context.fillStyle = "yellow";
+     context.fillStyle ="white";
      context.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
      
      bullet.y += bulletVelocityY;
