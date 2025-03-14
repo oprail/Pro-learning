@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Quiz App</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="quiz-app">
+  
+  
+  <div class="starting-page">
+   <h3>Quiz App</h3>
+    <div class="user-stats">
+     <div id="userName">
+      
+    </div>
+      <div>
+        Total attempted qus : 
+        <p id="attempted-US">0</p>
+      </div>
+      <div>
+        Total Correct Ans : 
+        <p id="correctAns-US">0</p>
+      </div>
+      <div>
+        Total Incorrect Ans : 
+        <p id="incorrectAns-US">0</p>
+      </div>
+    </div>
+    
+  
+  <div class="quiz-selectors">
+    start a quiz
+    <div class="selector">
+      Category :
+     <select id="category-selector">
+       <option value="31">Anime and Manga</option>
+       <option value="18">Computers</option>
+       <option value="19">Mathematics</option>
+       <option value="9">General Knowledge</option>
+       <option value="28">Vehicles</option>
+       <option value="27">Animals</option>
+       <option value="15">Video Games</option>
+     </select>
+     </div>
+    <div class="selector">
+      Difficulty :
+     <select id="difficulty-selector">
+       <option>Easy</option>
+       <option>Medium</option>
+       <option>Hard</option>
+     </select>
+    </div>
+    
+    <div class="selector">
+      Timer speed :
+     <select id="timerSpeed-selector">
+       <option value="700">super slow</option>
+       <option value="500">slow</option>
+       <option value="300">medium</option>
+       <option value="100">fast</option>
+       <option value="50">super fast</option>
+     </select>
+    </div>
+    
+    <div class="selector">
+      <button id="startQuizBtn">Start Quiz</button>
+    </div>
+   </div>
+    
+    
+  </div>
+  
+  
+  
+   
+   
+   
+   
+
+
+
+
+
+
+
+    
+  <div class="quiz-container">
+    <div class="question-box">
+      <div class="answers-score">
+       <p id="right-ans"></p>
+       <p id="wrong-ans"></p>
+      </div>
+      <p id="qus-number"></p>
+      <p id="question-text"></p>
+    </div>
+    <div class="timer">
+      <p class="timer-text">time</p>
+      <span id="time-bar"></span>
+      <p class="timer-text" id="remaining-time">100%</p>
+    </div>
+    <div class="option-container">
+      <div class="option">
+        <p>A</p>
+        <p id="optionA">
+        </p>
+        <i class="fas"></i>
+      </div>
+      <div class="option">
+        <p>B</p>
+        <p id="optionB">
+        </p>
+        <i class="fas"></i>
+      </div>
+      <div class="option ">
+        <p>C</p>
+        <p id="optionC">
+        </p>
+        <i class="fas"></i>
+      </div>
+      <div class="option">
+        <p>D</p>
+        <p id="optionD">
+        </p>
+        <i class="fas"></i>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script src="quiz.js"></script>
+</body>
+</html>
