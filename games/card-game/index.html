@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Simple Card Game </title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  
+  
+  <div class="game">
+    <div class="dealer-box">
+      
+       <p>Dealer</p>
+       <div class="bar" id="dealer-healthBar"></div>
+       <div class="dealer-cards"></div>
+     
+    </div>
+    
+    
+    <div class="board">
+      
+      <img class="card" id="dealer-board-card" src="/games/card-game/cards/dealer_card_back.png">
+      <img class="card" id="player-board-card" src="/games/card-game/cards/player_card_back.png">
+      
+    </div>
+    
+    <div class="player-box">
+      
+       <div class="player-cards"></div>
+     
+       <div class="controls">
+          <button class="control-btn" id="playCardBtn">Play</button>
+       </div>
+
+      <div class="bar" id="player-healthBar"></div>
+      <p>Player</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  <script src="card.js"></script>
+</body>
+</html>
